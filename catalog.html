@@ -11,20 +11,45 @@
           <img src="img/logo-device.svg" width="154" height="64" alt="Логотип Device">
         </a>
         <div class="user-navigation">
-          <div class="search-link">Поиск</div>
-          <div>
-            <div class="user-link">Валентин Петухов</div>
-            <div class="exit-link">Выйти</div>
+          <div class="search-link">
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input type="search" id="search" name="search" placeholder="Поиск по сайту" autofocus>
           </div>
-          <div class="check-link">Сравнить</div>
-          <div class="cart-link">Корзина</div>
+          <div>
+            <a class="user-link" href="#">Валентин Петухов</a>
+            <a class="exit-link" href="#">Выйти</a>
+          </div>
+          <a class="check-link" href="#">Сравнить</a>
+          <a class="cart-link" href="#">Корзина</a>
         </div>
-        <div class="site-navigation">
-          <a class="catalog-link">Каталог товаров</a>
-          <a class="delivery-link">Доставка</a>
-          <a class="warranty-link">Гарантия</a>
-          <a class="contact-link">Контакты</a>
-        </div>
+        <ul class="site-navigation">
+          <li>
+            <a class="catalog-link" href="catalog.html">Каталог товаров</a>
+            <div class="catalog-menu">
+              <ul class="catalog-menu-items">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+              <ul class="catalog-menu-items">
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </ul>
+              <ul class="catalog-menu-items">
+                <li><a href="#">Квадрокоптеры</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="delivery-link" href="#">Доставка</a>
+          </li>
+          <li>
+            <a class="warranty-link" href="#">Гарантия</a>
+          </li>
+          <li>
+            <a class="contact-link" href="#">Контакты</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="container">
@@ -146,16 +171,16 @@
     </main>
     <footer class="main-footer">
       <nav class="footer-navigation">
-        <a class="main-footer-logo">
+        <a class="main-footer-logo" href="index.html">
           <img src="img/logo-device.svg" width="163" height="35" alt="Логотип Device">
         </a>
         <div class="footer-user-navigation">
           <div>
-            <div class="user-link">Валентин Петухов</div>
-            <div class="exit-link">Выйти</div>
+            <a class="user-link" href="#">Валентин Петухов</a>
+            <a class="exit-link" href="#">Выйти</a>
           </div>
-          <div class="check-link">Сравнить</div>
-          <div class="cart-link">Корзина</div>
+          <a class="check-link" href="#">Сравнить</a>
+          <a class="cart-link" href="#">Корзина</a>
         </div>
       </nav>
       <div class="footer-middle">
@@ -163,9 +188,9 @@
           <p>г. Москва, ул. Строителей, 15</p>
         </div>
         <ul class="footer-site-nav">
-          <li class="footer-site-link">Доставка</li>
-          <li class="footer-site-link">Гарантия</li>
-          <li class="footer-site-link">Контакты</li>
+          <li class="footer-site-link"><a href="#">Доставка</a></li>
+          <li class="footer-site-link"><a href="#">Гарантия</a></li>
+          <li class="footer-site-link"><a href="#">Контакты</a></li>
         </ul>
         <div class="footer-tel">
           <a href="tel:+74954959595">Тел: +7 (495) 495-95-95</a>
@@ -185,25 +210,13 @@
       </div>
     </footer>
 
-    <section class="modal modal-menu">
-      <h2 class="visually-hidden">Меню</h2>
-      <ul class="catalog-menu">
-        <li>Виртуальная реальность</li>
-        <li>Моноподы для селфи</li>
-        <li>Экшн-камеры</li>
-      </ul>
-      <ul class="catalog-menu">
-        <li>Фитнес-браслеты</li>
-        <li>Умные часы</li>
-      </ul>
-      <ul class="catalog-menu">
-        <li>Квадрокоптеры</li>
-      </ul>
-    </section>
-
     <section class="modal modal-item-hover">
-      <h2 class="visually-hidden">Корзина</h2>
+      <h2 class="visually-hidden">Добавить в корзину</h2>
       <!-- Здесь будет таблица -->
+	  <button class="modal-cart" type="button">
+        В корзину
+      </button>
+	  <p>Добавить к сравнению</p>
     </section>
   </body>
 </html>
