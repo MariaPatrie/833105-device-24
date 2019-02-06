@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин гаджетов</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -50,9 +52,9 @@
       </nav>
     </header>
     <main class="container">
-      
+
       <h1 class="visually-hidden">Интернет-магазин гаджетов</h1>
-      
+
       <section class="slider">
         <!-- 1 -->
         <h2>Делай селфи,<br>
@@ -168,9 +170,9 @@
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
-          <li class="service-item-delivery">Доставка</li>
-          <li class="service-item-warranty">Гарантия</li>
-          <li class="service-item-credit">Кредит</li>
+          <li class="service-item-delivery button">Доставка</li>
+          <li class="service-item-warranty button">Гарантия</li>
+          <li class="service-item-credit button">Кредит</li>
         </ul>
         <div class="services-content">
           <div class="services-content-delivery">
@@ -188,7 +190,7 @@
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
             <img src="img/credit.svg" width="156" height="186" alt="Кредит">
           </div>
-        </div>        
+        </div>
       </section>
 
       <section class="logotypes">
@@ -266,22 +268,6 @@
       </div>
     </footer>
 
-    <section class="modal modal-menu">
-      <h2 class="visually-hidden">Меню</h2>
-      <ul class="catalog-menu">
-        <li>Виртуальная реальность</li>
-        <li>Моноподы для селфи</li>
-        <li>Экшн-камеры</li>
-      </ul>
-      <ul class="catalog-menu">
-        <li>Фитнес-браслеты</li>
-        <li>Умные часы</li>
-      </ul>
-      <ul class="catalog-menu">
-        <li>Квадрокоптеры</li>
-      </ul>
-    </section>
-
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -295,7 +281,7 @@
         </p>
         <p>
           <label for="user-note">Текст письма</label>
-          <textarea class="feedback-note" id="user-note" name="note" rows="10">В свободной форме</textarea>
+          <textarea class="feedback-note" id="user-note" name="note" rows="10"  placeholder="В свободной форме"></textarea>
         </p>
         <button class="button" type="submit">
           Отправить
