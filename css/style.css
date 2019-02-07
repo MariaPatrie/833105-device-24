@@ -2,14 +2,14 @@
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/gilroylight.woff") format("woff");
+  src: url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff") format("woff");
 }
 
 body {
@@ -27,6 +27,24 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  opacity: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  z-index: -999;
 }
 
 .button {
@@ -140,10 +158,6 @@ a {
   list-style: none;
 }
 
-.popular-item {
-  background-color: #f7e296;
-  text-align: center;
-}
 .popular-item h3 {
   font-size: 18px;
   line-height: 24px;
@@ -151,11 +165,40 @@ a {
 }
 
 .popular-item a {
+  display: inline-block;
   color: #000000;
+  background-color: #f7e296;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  text-align: center;
 }
 
-.popular-item:hover,
-.popular-item:focus {
+.popular-item:nth-child(1) a {
+  background-image: url("../img/popular-1.svg");
+}
+
+.popular-item:nth-child(2) a {
+  background-image: url("../img/popular-2.svg");
+}
+
+.popular-item:nth-child(3) a {
+  background-image: url("../img/popular-3.svg");
+}
+
+.popular-item:nth-child(4) a {
+  background-image: url("../img/popular-4.svg");
+}
+
+.popular-item:nth-child(5) a {
+  background-image: url("../img/popular-5.svg");
+}
+
+.popular-item:nth-child(6) a {
+  background-image: url("../img/popular-6.svg");
+}
+
+.popular-item a:hover,
+.popular-item a:focus {
   background-color: #f0c52e;
 }
 
@@ -163,9 +206,10 @@ a {
   color: #000000;
   opacity: 0.3;
 }
-.popular-item img:active {
+
+/**.popular-item img:active {
   filter: opacity(0.3);
-}
+}**/
 
 .services-list {
   list-style: none;
@@ -181,18 +225,41 @@ a {
   background-color: #e5e5e5;
 }
 
-.services-content-delivery p{
+.services-content-delivery p,
+.services-content-warranty p,
+.services-content-credit p{
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
 }
 
-.services-content-delivery h3 {
+.services-content-delivery h3,
+.services-content-warranty h3,
+.services-content-credit h3 {
   font-size: 47px;
   line-height: 48px;
   text-align: left;
   font-weight: 800;
+}
+
+.services-content-delivery,
+.services-content-warranty,
+.services-content-credit {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.services-content-delivery {
+  background-image: url("../img/delivery.svg");
+}
+
+.services-content-warranty {
+  background-image: url("../img/warranty.svg");
+}
+
+.services-content-credit {
+  background-image: url("../img/credit.svg");
 }
 
 .logotypes-list {
@@ -297,6 +364,19 @@ a {
 
 .sort-item a:active {
   opacity: 1;
+}
+
+.sort .button {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.button-top {
+  background-image: url("../img/icon-up-dir.svg");
+}
+
+.button-bottom {
+  background-image: url("../img/icon-down-dir.svg");
 }
 
 .filters {
