@@ -8,8 +8,8 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <div class="main-navigation-wrapper"> 
+      <div class="container">
+        <div class="main-navigation"> <!-- ? -->
           <a class="main-header-logo">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35">
               <path d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z"/>
@@ -22,47 +22,48 @@
             </form>
             <div class="user-menu">
               <a class="login-link" href="#">Войти</a>
-              <div class="container">
+              <div class="container-mini">
                 <a class="check-link" href="#">Сравнить</a>
                 <a class="cart-link" href="#">Корзина</a>
               </div>
             </div>
           </div>
-          <div class="site-navigation">
+          <nav class="site-navigation">
             <div class="catalog-link">
               <a  href="catalog.html">Каталог товаров</a>
+			  <div class="catalog-menu">
+                <ul class="catalog-menu-items">
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul class="catalog-menu-items">
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                </ul>
+                <ul class="catalog-menu-items">
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
+              </div>
             </div>
             <div class="main-menu">
-              <div class="container">
+              <div class="container-mini">
                 <a href="#">Доставка</a>
                 <a href="#">Гарантия</a>
               </div>
               <a class="contact-link" href="#">Контакты</a>
             </div>
-          </div>
-          <div class="catalog-menu">
-            <ul class="catalog-menu-items">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-            </ul>
-            <ul class="catalog-menu-items">
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-            </ul>
-            <ul class="catalog-menu-items">
-              <li><a href="#">Квадрокоптеры</li>
-            </ul>
-          </div>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
     <main>
 
       <h1 class="visually-hidden">Интернет-магазин гаджетов</h1>
 
+	  <div class="container">
       <section class="slider">
-      <div class="wrapper backdrop">
+      <!--<div class="wrapper">-->
         <!-- 1 -->
 		<div class="slider-item">
           <div class="slider-img">
@@ -142,12 +143,12 @@
             </table>
           </div>
         </div>
-      </div>
+      <!--</div>-->
       </section>
 
       <section class="popular">
         <h2 class="visually-hidden">Популярные товары</h2>
-        <ul class="popular-list wrapper">
+        <ul class="popular-list">
           <li class="popular-item">
             <a href="#">
               <div class="img">
@@ -204,9 +205,11 @@
           </li>
         </ul>
       </section>
+	  </div>
 
+	  <div class="services-wrapper">
+	  <div class="container">
       <section class="services">
-      <div class="wrapper">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
           <li class="service-item-delivery button">Доставка</li>
@@ -230,12 +233,13 @@
             <!--<img src="img/credit.svg" width="156" height="186" alt="Кредит">-->
           </div>
         </div>
-      </div>
       </section>
+      </div>
+      </div>
 
-      <section class="logotypes">
+      <section class="logotypes container">
         <h2 class="visually-hidden">Бренды</h2>
-        <ul class="logotypes-list wrapper">
+        <ul class="logotypes-list">
           <li class="logotype-item">
             <a href="#"><img src="img/logo-1.jpg" width="260" height="100" alt="dgi"></a>
           </li>
@@ -251,8 +255,7 @@
         </ul>
       </section>
 
-      <div class="index-columns">
-	  <div class="wrapper">
+      <div class="index-columns container">
 	    <section class="info">
           <h2>О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -272,10 +275,9 @@
           <a class="button" href="#">Напишите нам</a>
         </section>
       </div>
-	  </div>
     </main>
     <footer class="main-footer">
-	  <div class="main-footer-wrapper">
+	  <div class="container">
         <div class="footer-navigation">
           <a class="main-footer-logo">
 		    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35" class="main-logo">
@@ -297,9 +299,7 @@
             <li class="footer-site-link"><a href="#">Гарантия</a></li>
             <li class="footer-site-link"><a href="#">Контакты</a></li>
           </ul>
-          <div class="footer-tel">
-            <a href="tel:+74954959595">Тел: +7 (495) 495-95-95</a>
-          </div>
+          <a class="footer-tel" href="tel:+74954959595">Тел: +7 (495) 495-95-95</a>
         </div>
         <div class="footer-bottom">
 	      <span>--</span>
