@@ -130,7 +130,10 @@ a {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 0 60px;
+  /*padding: 0 60px;*/
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 50px;
 
   background-image: linear-gradient(transparent 19px, #f7e296 19px);
 }
@@ -140,10 +143,6 @@ a {
 /**  position: absolute;**/
   width: 163px;
   height: 35px;
-}
-
-.main-header-logo {
-  top: -15px;  
 }
 
 .user-navigation {
@@ -332,7 +331,7 @@ a {
 }
 
 .slider {
-  background-image: linear-gradient(#f7e296 70px, transparent 70px);
+  background-image: linear-gradient(#f7e296 100px, transparent 100px);
 }
 
 .slider-item {
@@ -351,6 +350,7 @@ a {
 }
 
 .slider h2 {
+  margin-top: 70px;
   font-size: 47px;
   line-height: 56px;
   font-weight: 800;
