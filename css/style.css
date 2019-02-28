@@ -1817,6 +1817,10 @@ input[type="search"]:focus ~ .button-search {
   padding: 0;
 }
 
+.modal-map-pic {
+  border: none;
+}
+
 .feedback-form {
   display: flex;
   flex-direction: column;
