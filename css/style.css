@@ -342,7 +342,7 @@ a {
 
   padding: 20px 60px;
   width: 1160px;
-  height: 160px;
+  height: 162px;
 
   -webkit-box-sizing: border-box;
 
@@ -690,7 +690,7 @@ a {
 
 .popular-list {
   margin: 0;
-  margin-bottom: 63px;
+  margin-bottom: 81px;
   padding: 0;
 
   list-style: none;
@@ -700,72 +700,76 @@ a {
   width: 160px;
 }
 
+.popular-item .popular-item-title {
+  margin: 0;
+}
+
 .popular-item:nth-child(2) .popular-item-title {
   padding-right: 35px;
 }
 
-/*.popular-item:nth-child(2) .img {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}*/
-
 .img {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 160px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+  padding-top: 192px;
+}
 
-  margin-bottom: 32px;
-
+.img::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 0;
   background-color: #f7e296;
 }
 
-.popular-item .img::after {
+.img::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  width: 135px;
+  height: 120px;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .popular-item:nth-child(1) .img::after {
+  top: 50px;
+  left: 30px;
   background-image: url("../img/popular-1.svg");
 }
 
 .popular-item:nth-child(2) .img::after {
+  top: 40px;
+  left: 38px;
   background-image: url("../img/popular-2.svg");
-  background-position: 50% 100%;
 }
 
 .popular-item:nth-child(3) .img::after {
+  top: 37px;
+  left: 49px;
   background-image: url("../img/popular-3.svg");
 }
 
 .popular-item:nth-child(4) .img::after {
+  top: 49px;
+  left: 28px;
   background-image: url("../img/popular-4.svg");
 }
 
 .popular-item:nth-child(5) .img::after {
+  top: 31px;
+  left: 55px;
   background-image: url("../img/popular-5.svg");
 }
 
 .popular-item:nth-child(6) .img::after {
+  top: 48px;
+  left: 13px;
   background-image: url("../img/popular-6.svg");
 }
 
-.popular-item:hover .img,
-.popular-item:focus .img {
+.popular-item:hover .img::before,
+.popular-item:focus .img::before {
   background: #f0c52e;
 }
 
@@ -810,7 +814,7 @@ a {
 
   width: 280px;
   padding-top: 80px;
-  padding-bottom: 135px;
+  padding-bottom: 120px;
 }
 
 .service-controls::after {
@@ -1351,6 +1355,7 @@ a {
   font-size: 14px;
   font-weight: 300;
   color: #000000;
+  vertical-align: middle;
   opacity: 0.2;
 
   cursor: pointer;
