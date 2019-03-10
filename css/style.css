@@ -813,8 +813,8 @@ a {
           align-items: flex-start;
 
   width: 280px;
+  height: 188px;
   padding-top: 80px;
-  padding-bottom: 120px;
 }
 
 .service-controls::after {
@@ -1724,7 +1724,13 @@ a {
   opacity: 0.3;
 }
 
-.main-logo,
+.main-logo {
+  padding-top: 6px;
+  width: 163px;
+  height: 35px;
+  fill: #ffc600;
+}
+
 .color-svg {
   padding-top: 6px;
   fill: #ffc600;
